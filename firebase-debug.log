@@ -1,0 +1,47 @@
+[debug] [2021-11-15T16:05:48.756Z] ----------------------------------------------------------------------
+[debug] [2021-11-15T16:05:48.759Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vinoth\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-11-15T16:05:48.760Z] CLI Version:   9.22.0
+[debug] [2021-11-15T16:05:48.760Z] Platform:      win32
+[debug] [2021-11-15T16:05:48.760Z] Node Version:  v16.6.1
+[debug] [2021-11-15T16:05:48.761Z] Time:          Mon Nov 15 2021 21:35:48 GMT+0530 (India Standard Time)
+[debug] [2021-11-15T16:05:48.761Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-15T16:05:48.835Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-15T16:05:48.836Z] > authorizing via signed-in user (vinobeeee0@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\My Project\React Project\hotstar-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using Hotstar-Clone. 
+[debug] [2021-11-15T16:05:53.687Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/Hotstar-Clone [none]
+[debug] [2021-11-15T16:05:57.196Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/Hotstar-Clone 400
+[debug] [2021-11-15T16:05:57.197Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/Hotstar-Clone {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT"}}
+[debug] [2021-11-15T16:05:57.197Z] HTTP Error: 400, Request contains an invalid argument.
+[debug] [2021-11-15T16:06:06.696Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at module.exports (C:\Users\vinoth\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\vinoth\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Client.request (C:\Users\vinoth\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\vinoth\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\vinoth\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\vinoth\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project Hotstar-Clone. Please make sure the project exists and your account has permission to access it.
